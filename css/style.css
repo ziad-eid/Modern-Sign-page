@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: auto;
+    background-color: rgba(117, 117, 252, 0.158);
+    font-family: 'Big Shoulders', sans-serif;
+}
+main{
+    background-color: rgb(248, 248, 248);
+    border-radius: 6px;
+    position: relative;
+    padding: 20px 35px;
+    box-shadow: 0 0 20px rgba(117, 117, 252, 0.247) inset;
+}
+main::before{
+    position: absolute;
+    content: '';
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: rgba(117, 117, 252, 0.247);
+    z-index: -1;
+    left: -10px;
+    top: -10px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(117, 117, 252, 0.247);
+}
+main h1{
+    color: rgb(117, 117, 252);
+    text-align: center;
+    margin-top: 5px;
+    font-style: italic;
+}
+main .user{
+    position: relative;
+    margin: 30px 0 20px;
+    display: flex;
+    justify-content: center;
+}
+main input{
+    width: 80%;
+    padding: 15px 15px 5px;
+    border: 1px solid rgba(117, 117, 252, 0.596);
+    box-shadow: 0 0 20px rgba(117, 117, 252, 0.247);
+    border-radius: 6px;
+    outline: none;
+}
+main label{
+    position: absolute;
+    left: 52px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(117, 117, 252);
+    transition: .5s;
+    cursor: pointer;
+}
+main input:focus + label,
+main input:not(:placeholder-shown) + label {
+  font-size: 12px;
+  top: 10px;
+  color: rgb(112, 112, 141);
+}
+
+main .pass{
+    position: relative;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+main label i{
+    margin-right: 3px;
+}
+main .sign{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;
+}
+main input[type="submit"]{
+    width: 80%;
+    padding: 9px;
+    border: none;
+    background-color: rgba(117, 117, 252, 0.596);
+    border-radius: 6px;
+    box-shadow: 0 0 20px rgba(117, 117, 252, 0.247);
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+main input[type="submit"]:hover{
+    background-color: rgb(117, 117, 252);
+    box-shadow: 0 0 20px rgba(117, 117, 252, 0.247) inset;
+    transition: .3s;
+}
+main .pass-forgot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+main .pass-forgot a{
+    color: rgb(117, 117, 252);
+    text-decoration: none;
+    position: relative;
+}
+main .pass-forgot a::before{
+    position: absolute;
+    content: '';
+    bottom: -4px;
+    right: 0;
+    height: 1px;
+    width: 0;
+    transition: .5s;
+    background-color: rgb(136, 136, 243);
+    opacity: .2;
+}
+main .pass-forgot a:hover::before{
+    width: 100%;
+    left: 0;
+    right: auto;
+    opacity: 1;
+}
+main p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3em;
+    color: rgba(163, 163, 163, 0.795);
+    font-style: italic;
+}
+@media (max-width: 767px) {
+    main{
+        width: 330px;
+    }
+    main h1{
+        font-size: 1.5em;
+
+    }
+    main input{
+        width: 100%;
+    }
+    main label{
+        left: 20px;
+    }
+    main input[type="submit"]{
+        width: 100%;
+        font-size: 16px;
+    }
+}

@@ -4,7 +4,7 @@
 This is a sleek and modern login UI designed to provide a clean and welcoming experience for users who want to join the community.
 
 ## 🔹 Features
-Beautiful frosted-glass effect with soft shadows
+Beautiful effect with soft shadows
 
 Responsive layout with centered form
 
@@ -18,7 +18,12 @@ Links for:
 
 ❓ Forgot password
 
+✅ remember me
+ 
 Footer with copyright © 2025
+
+and Social links 
+
 
 ## 🧪 Tech Stack
 HTML5

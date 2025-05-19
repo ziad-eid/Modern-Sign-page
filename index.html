@@ -17,25 +17,38 @@
 <body>
     <main>
         <form action="" method="post">
-        <h1>Sign In to join the community</h1>
-        <div class="user">
-            <input type="text" id="username" placeholder="" required>
-            <label for="username">
-                <i class="fa-solid fa-user-tie"></i> Username</label>
+        <h1>Sign In to Fylo</h1>
+        <div class="email">
+            <input type="email" id="email" placeholder="" required>
+            <label for="email">
+                <i class="fa-solid fa-envelope"></i> Email</label>
         </div>
         <div class="pass">
-            <input type="password" id="password" placeholder="" required>
+            <input type="password" id="password" placeholder="" required minlength="8">
             <label for="password">
                 <i class="fa-solid fa-lock"></i> Password</label>
         </div>
         <div class="sign">
             <input type="submit" value="Sign In">
         </div>
+        <div class="info">
+            <div class="checkbox">
+            <input type="checkbox" name="check" id="remember">
+            <label class="check" for="remember">Remember me</label>
+            </div>
         <div class="pass-forgot">
             <a href="#">Forget password?</a>
             <a href="#">Change Password</a>
         </div>
-        <p>All rights reserved &copy; 2025</p>
+        </div>
+        <div class="footer">
+           <div class="icons">
+            <a href="https://www.facebook.com/"></a>
+            <a href="https://www.instagram.com/"></a>
+            <a href="https://www.linkedin.com/"></a>
+           </div>
+            <p>&COPY; Fylo 2025 - All rights reserved</p>
+        </div>
         </form>
     </main>
 </body>
